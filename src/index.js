@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from 'react-dom';
+import NavBar from "./components/navbar";
 
 const App = () => {
 
     return (
-        <div><h1>Welcome to My Exercise Book</h1></div>
+        <div>
+            <NavBar />
+        </div>
     )
 }
 
