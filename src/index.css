@@ -1,0 +1,8 @@
+.mainContainer {
+  width: 70%;
+  height: 500px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(254, 250, 224);
+}

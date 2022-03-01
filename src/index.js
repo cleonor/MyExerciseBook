@@ -2,12 +2,15 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import NavBar from "./components/navbar";
 import { BrowserRouter as Router } from 'react-router-dom';
+import './index.css'
 
 const App = () => {
 
     return (
         <Router>
-            <NavBar />
+            <div className="mainContainer">
+                <NavBar />
+            </div>
         </Router>
     )
 }
