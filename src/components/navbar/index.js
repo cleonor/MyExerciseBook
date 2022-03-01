@@ -4,10 +4,6 @@ import { Nav, NavLink, NavMenu } from './NavBar'
 const NavBar = () => {
     return (
         <Nav>
-            <NavLink to='/'>
-                MyExerciseBook
-                {/* <img src={require('../../images/logo.svg')} alt='logo' /> */}
-            </NavLink>
             <NavMenu>
                 <NavLink to='/1' activeStyle>
                     Exercise 1
