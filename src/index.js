@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from 'react-dom';
+import NavBar from "./components/navbar";
+import { BrowserRouter as Router } from 'react-router-dom';
+import './index.css'
 
 const App = () => {
 
     return (
-        <div><h1>Welcome to My Exercise Book</h1></div>
+        <Router>
+            <div className="mainContainer">
+                <NavBar />
+            </div>
+        </Router>
     )
 }
 
