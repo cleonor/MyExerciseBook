@@ -1,18 +1,26 @@
 import React from 'react'
+import { Nav, NavLink, NavMenu } from './NavBar'
 
 const NavBar = () => {
     return (
-        <Navbar>
-            <Container>
-                <Navbar.Brand href="#home">MyExerciseBook</Navbar.Brand>
-                <NavMenu>
-                    <NavLink to="/1">Exercise1</NavLink>
-                    <NavLink to="/2">Exercise2</NavLink>
-                    <NavLink to="/3">Exercise3</NavLink>
-                </NavMenu>
-            </Container>
-        </Navbar>
+        <Nav>
+            <NavLink to='/'>
+                MyExerciseBook
+                {/* <img src={require('../../images/logo.svg')} alt='logo' /> */}
+            </NavLink>
+            <NavMenu>
+                <NavLink to='/1' activeStyle>
+                    Exercise 1
+                </NavLink>
+                <NavLink to='/2' activeStyle>
+                    Exercise 2
+                </NavLink>
+                <NavLink to='/3' activeStyle>
+                    Exercise 3
+                </NavLink>
+            </NavMenu>
+        </Nav>
     )
 }
 
-export default NavBar
+export default NavBar;
