@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import NavBar from "./components/navbar";
 import { BrowserRouter as Router } from 'react-router-dom';
-import './indexx.css'
+import './index.css'
 
 const App = () => {
 
