@@ -1,5 +1,6 @@
 import React from 'react';
 import ButtonComponent from './buttonComponent'
+import Stack from '@mui/material/Stack';
 
 class Exercise1 extends React.Component {
     constructor(props) {
@@ -23,18 +24,19 @@ class Exercise1 extends React.Component {
                 <h2>
                     Actual number: {this.state.actualNumber}
                 </h2>
+                <Stack direction="row" spacing={2}>
+                    <ButtonComponent
+                        className={"subButton"}
+                        onClick={this.changeValueOneLess.bind(this)}
+                        title={"-1"}
+                    />
 
-                <ButtonComponent
-                    className={"subButton"}
-                    onClick={this.changeValueOneLess.bind(this)}
-                    title={"-1"}
-                />
-
-                <ButtonComponent
-                    className={"summButton"}
-                    onClick={() => this.changeValueOneMore(1)}
-                    title={"+1"}
-                />
+                    <ButtonComponent
+                        className={"summButton"}
+                        onClick={() => this.changeValueOneMore(1)}
+                        title={"+1"}
+                    />
+                </Stack>
             </div >
         )
     }
