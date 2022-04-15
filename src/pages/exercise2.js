@@ -5,37 +5,26 @@ import github from './../images/github.png'
 const Exercise2 = () => {
 
     const [isVisible, setVisible] = useState(false);
-    const [imageNumber, setImageNumber] = useState(0);
-
-    const imgArray = [];
-    console.log(imgArray);
-
+    const [imageNumber, setImageNumber] = useState([]);
 
     return (
         <div>
-            {isVisible ? imgArray.push(<img
-                className="imageExercise2"
-                src={github}
-                alt="Github"
-                isVisible={isVisible}
-                setVisible={setVisible}
-            >
-            </img>) : null
-            }
+            {isVisible ? imageNumber : null}
             <button
                 className="buttonExercise2"
                 onClick={() => {
                     setVisible(true);
-                    setImageNumber(imageNumber + 1);
-                    imgArray.push(<img
+                    const images = [...imageNumber];
+                    images.push(<img
                         className="imageExercise2"
                         src={github}
                         alt="Github"
                         isVisible={isVisible}
                         setVisible={setVisible}
+                        key={Math.random}
                     >
                     </img>)
-                }
+                    setImageNumber(images)}
                 }
             >
                 Click me!
