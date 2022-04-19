@@ -1,5 +1,5 @@
 .imageExercise2 {
-  position: relative;
+  position: absolute;
   animation: github infinite;
   animation-direction: alternate;
   animation-duration: 5s;
@@ -7,23 +7,23 @@
 
 @keyframes github {
   0% {
-    left: 10%;
-    top: 10%;
+    left: 50px;
+    top: 50px;
   }
   25% {
-    left: 70%;
+    left: 1000px;
     top: 0px;
   }
   50% {
-    left: 200px;
-    top: 200px;
+    left: 700px;
+    top: 500px;
   }
   75% {
     left: 0px;
     top: 200px;
   }
   100% {
-    left: 0px;
-    top: 0px;
+    left: 1200px;
+    top: 600px;
   }
 }
