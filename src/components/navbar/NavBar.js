@@ -6,8 +6,8 @@ export const Nav = styled.nav`
   border-radius: 15px 15px 0 0;
   height: 30px;
   display: flex;
-  justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
+  flex-direction: row;
+  justify-content: center;
   z-index: 10;
 `;
 
